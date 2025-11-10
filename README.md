@@ -1,6 +1,10 @@
-# Server-Admin-Panel
-1. Clone Repoet
-2. lag virtuelt miljø ('python3 -m venv venv')
-3. Installer dependencies
+# Server Admin Panel
+Web-basert adminpanel laget i flask og MariaDb
+Prosjekt i Høst 2025 - Kuben Vgs
+
+#Status
+Dag 1 Fullført: Miljø + Første commit
+Dag 2 Kommer: database + brukerhåntering
+
 
 

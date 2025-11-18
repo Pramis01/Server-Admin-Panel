@@ -6,5 +6,6 @@ Prosjekt i Høst 2025 - Kuben Vgs
 Dag 1 Fullført: Miljø + Første commit
 Dag 2 Kommer: database + brukerhåntering
 
-
+#18 Nov
+skal starte hele prosjekt på nytt slettet alle filer.
 

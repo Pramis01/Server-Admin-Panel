@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     
     <div class="container">
+            <!-- LOGIN FORM -->
         <div class="form-box active" id="login-form">
-            <form action="">
+            <form action="/login" method="POST">
                 <h2>Login</h2>
-                <input type="email" name="email" placeholder="Email" required >
+                <input name="username" placeholder="Username" required >
                 <input type="password" name="password" placeholder="Password" required >
-                <button type="submit" name="login">Login</button>
+                <button type="submit">Login</button>
                 <p>Don't have an account ? <a href="#" onclick="showForm('register-form')">Register</a></p>
             </form>
         </div>
-
+            <!-- REGISTER FORM -->
         <div class="form-box" id="register-form">
-            <form action="">
+            <form action="/register" method="POST">
                 <h2>Register</h2>
-                <input type="text" name="name" placeholder="Name" required >
+                <input name="username" placeholder="Username" required >
                 <input type="email" name="email" placeholder="Email" required >
                 <input type="password" name="password" placeholder="Password" required >
                 <select name="role" required>
@@ -30,11 +31,11 @@
                     <option value="user">User</option>
                     <option value="admin">Admin</option>
                 </select>
-                <button type="submit" name="Register">Register</button>
+                <button type="submit">Register</button>
                 <p>Already have an account ? <a href="#" onclick="showForm('login-form')">Login</a></p>
             </form>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
